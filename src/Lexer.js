@@ -118,7 +118,7 @@ module.exports = class Lexer {
         src = src.substring(cap[0].length);
         this.tokens.push({
           type: 'heading',
-          depth: cap[1].length,
+          depth: parseInt(cap[1]),
           text: cap[2]
         });
         continue;

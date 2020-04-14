@@ -73,7 +73,7 @@
     "section": "Tabs"
   },
   {
-    "markdown": "#\tFoo\n",
+    "markdown": "#1\tFoo\n",
     "html": "<h1>Foo</h1>\n",
     "example": 10,
     "start_line": 463,
@@ -249,7 +249,7 @@
     "section": "Thematic breaks"
   },
   {
-    "markdown": "# foo\n## foo\n### foo\n#### foo\n##### foo\n###### foo\n",
+    "markdown": "#1 foo\n#2 foo\n#3 foo\n#4 foo\n#5 foo\n#6 foo\n",
     "html": "<h1>foo</h1>\n<h2>foo</h2>\n<h3>foo</h3>\n<h4>foo</h4>\n<h5>foo</h5>\n<h6>foo</h6>\n",
     "example": 32,
     "start_line": 768,
@@ -265,8 +265,8 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "#5 bolt\n\n#hashtag\n",
-    "html": "<p>#5 bolt</p>\n<p>#hashtag</p>\n",
+    "markdown": "# bolt\n\n#hashtag\n",
+    "html": "<p># bolt</p>\n<p>#hashtag</p>\n",
     "example": 34,
     "start_line": 802,
     "end_line": 809,
@@ -281,7 +281,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "# foo *bar* \\*baz\\*\n",
+    "markdown": "#1 foo *bar* \\*baz\\*\n",
     "html": "<h1>foo <em>bar</em> *baz*</h1>\n",
     "example": 36,
     "start_line": 823,
@@ -289,7 +289,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "#                  foo                     \n",
+    "markdown": "#1                  foo                     \n",
     "html": "<h1>foo</h1>\n",
     "example": 37,
     "start_line": 832,
@@ -297,7 +297,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": " ### foo\n  ## foo\n   # foo\n",
+    "markdown": " #3 foo\n  #2 foo\n   #1 foo\n",
     "html": "<h3>foo</h3>\n<h2>foo</h2>\n<h1>foo</h1>\n",
     "example": 38,
     "start_line": 841,
@@ -321,7 +321,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "## foo ##\n  ###   bar    ###\n",
+    "markdown": "#2 foo ##\n  #3   bar    ###\n",
     "html": "<h2>foo</h2>\n<h3>bar</h3>\n",
     "example": 41,
     "start_line": 873,
@@ -329,7 +329,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "# foo ##################################\n##### foo ##\n",
+    "markdown": "#1 foo ##################################\n#5 foo ##\n",
     "html": "<h1>foo</h1>\n<h5>foo</h5>\n",
     "example": 42,
     "start_line": 884,
@@ -337,7 +337,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "### foo ###     \n",
+    "markdown": "#3 foo ###     \n",
     "html": "<h3>foo</h3>\n",
     "example": 43,
     "start_line": 895,
@@ -345,7 +345,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "### foo ### b\n",
+    "markdown": "#3 foo ### b\n",
     "html": "<h3>foo ### b</h3>\n",
     "example": 44,
     "start_line": 906,
@@ -353,7 +353,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "# foo#\n",
+    "markdown": "#1 foo#\n",
     "html": "<h1>foo#</h1>\n",
     "example": 45,
     "start_line": 915,
@@ -361,7 +361,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "### foo \\###\n## foo #\\##\n# foo \\#\n",
+    "markdown": "#3 foo \\###\n#2 foo #\\##\n#1 foo \\#\n",
     "html": "<h3>foo ###</h3>\n<h2>foo ###</h2>\n<h1>foo #</h1>\n",
     "example": 46,
     "start_line": 925,
@@ -369,7 +369,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "****\n## foo\n****\n",
+    "markdown": "****\n#2 foo\n****\n",
     "html": "<hr />\n<h2>foo</h2>\n<hr />\n",
     "example": 47,
     "start_line": 939,
@@ -377,7 +377,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "Foo bar\n# baz\nBar foo\n",
+    "markdown": "Foo bar\n#1 baz\nBar foo\n",
     "html": "<p>Foo bar</p>\n<h1>baz</h1>\n<p>Bar foo</p>\n",
     "example": 48,
     "start_line": 950,
@@ -677,7 +677,7 @@
     "section": "Indented code blocks"
   },
   {
-    "markdown": "# Heading\n    foo\nHeading\n------\n    foo\n----\n",
+    "markdown": "#1 Heading\n    foo\nHeading\n------\n    foo\n----\n",
     "html": "<h1>Heading</h1>\n<pre><code>foo\n</code></pre>\n<h2>Heading</h2>\n<pre><code>foo\n</code></pre>\n<hr />\n",
     "example": 85,
     "start_line": 1537,
@@ -885,7 +885,7 @@
     "section": "Fenced code blocks"
   },
   {
-    "markdown": "foo\n---\n~~~\nbar\n~~~\n# baz\n",
+    "markdown": "foo\n---\n~~~\nbar\n~~~\n#1 baz\n",
     "html": "<h2>foo</h2>\n<pre><code>bar\n</code></pre>\n<h1>baz</h1>\n",
     "example": 111,
     "start_line": 1925,
@@ -1464,7 +1464,7 @@
     "section": "Link reference definitions"
   },
   {
-    "markdown": "# [Foo]\n[foo]: /url\n> bar\n",
+    "markdown": "#1 [Foo]\n[foo]: /url\n> bar\n",
     "html": "<h1><a href=\"/url\">Foo</a></h1>\n<blockquote>\n<p>bar</p>\n</blockquote>\n",
     "example": 183,
     "start_line": 3082,
@@ -1576,7 +1576,7 @@
     "section": "Paragraphs"
   },
   {
-    "markdown": "  \n\naaa\n  \n\n# aaa\n\n  \n",
+    "markdown": "  \n\naaa\n  \n\n#1 aaa\n\n  \n",
     "html": "<p>aaa</p>\n<h1>aaa</h1>\n",
     "example": 197,
     "start_line": 3278,
@@ -1584,7 +1584,7 @@
     "section": "Blank lines"
   },
   {
-    "markdown": "> # Foo\n> bar\n> baz\n",
+    "markdown": "> #1 Foo\n> bar\n> baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "example": 198,
     "start_line": 3344,
@@ -1592,7 +1592,7 @@
     "section": "Block quotes"
   },
   {
-    "markdown": "># Foo\n>bar\n> baz\n",
+    "markdown": ">#1 Foo\n>bar\n> baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "example": 199,
     "start_line": 3359,
@@ -1600,7 +1600,7 @@
     "section": "Block quotes"
   },
   {
-    "markdown": "   > # Foo\n   > bar\n > baz\n",
+    "markdown": "   > #1 Foo\n   > bar\n > baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "example": 200,
     "start_line": 3374,
@@ -1616,7 +1616,7 @@
     "section": "Block quotes"
   },
   {
-    "markdown": "> # Foo\n> bar\nbaz\n",
+    "markdown": "> #1 Foo\n> bar\nbaz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "example": 202,
     "start_line": 3404,
@@ -2175,7 +2175,7 @@
     "section": "List items"
   },
   {
-    "markdown": "- # Foo\n- Bar\n  ---\n  baz\n",
+    "markdown": "- #1 Foo\n- Bar\n  ---\n  baz\n",
     "html": "<ul>\n<li>\n<h1>Foo</h1>\n</li>\n<li>\n<h2>Bar</h2>\nbaz</li>\n</ul>\n",
     "example": 270,
     "start_line": 4658,
@@ -5253,7 +5253,7 @@
     "section": "Hard line breaks"
   },
   {
-    "markdown": "### foo\\\n",
+    "markdown": "#3 foo\\\n",
     "html": "<h3>foo\\</h3>\n",
     "example": 643,
     "start_line": 9295,
@@ -5261,7 +5261,7 @@
     "section": "Hard line breaks"
   },
   {
-    "markdown": "### foo  \n",
+    "markdown": "#3 foo  \n",
     "html": "<h3>foo</h3>\n",
     "example": 644,
     "start_line": 9302,
