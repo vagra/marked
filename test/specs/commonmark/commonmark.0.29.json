@@ -385,7 +385,7 @@
     "section": "ATX headings"
   },
   {
-    "markdown": "## \n#\n### ###\n",
+    "markdown": "#2 \n#1\n#3 ###\n",
     "html": "<h2></h2>\n<h1></h1>\n<h3></h3>\n",
     "example": 49,
     "start_line": 963,
