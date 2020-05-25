@@ -1,16 +1,16 @@
-### Heading with <em>html</em>
+#3 Heading with <em>html</em>
 
-### Heading with a [link](http://github.com/)
+#3 Heading with a [link](http://github.com/)
 
-### Heading with some _italic text_
+#3 Heading with some _italic text_
 
-### Or some **strong**
+#3 Or some **strong**
 (which doesn't really make any difference, here)
 
-### Or even `code`
+#3 Or even `code`
 
-### What about ~~strikethrough~~
+#3 What about ~~strikethrough~~
 
-## And a ref [link][destination]
+#2 And a ref [link][destination]
 
 [destination]: /some/url "link to nowhere"

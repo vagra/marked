@@ -1,6 +1,6 @@
 [test]: http://google.com/ "Google"
 
-# A heading
+#1 A heading
 
 Just a note, I've found that I can't test my markdown parser vs others.
 For example, both markdown.js and showdown code blocks in lists wrong. They're

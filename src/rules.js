@@ -12,7 +12,7 @@ const block = {
   code: /^( {4}[^\n]+\n*)+/,
   fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
   hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
-  heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
+  heading: /^ {0,3}#(\d{1,3}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
   blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
   list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
   html: '^ {0,3}(?:' // optional indentation
@@ -56,7 +56,7 @@ block.list = edit(block.list)
 
 block._tag = 'address|article|aside|base|basefont|blockquote|body|caption'
   + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption'
-  + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe'
+  + '|figure|footer|form|frame|frameset|h\\d{1,3}|head|header|hr|html|iframe'
   + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option'
   + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr'
   + '|track|ul';
@@ -69,7 +69,7 @@ block.html = edit(block.html, 'i')
 
 block.paragraph = edit(block._paragraph)
   .replace('hr', block.hr)
-  .replace('heading', ' {0,3}#{1,6} ')
+  .replace('heading', ' {0,3}#\\d{1,3} ')
   .replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
   .replace('blockquote', ' {0,3}>')
   .replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n')
@@ -103,7 +103,7 @@ block.gfm = merge({}, block.normal, {
 
 block.gfm.nptable = edit(block.gfm.nptable)
   .replace('hr', block.hr)
-  .replace('heading', ' {0,3}#{1,6} ')
+  .replace('heading', ' {0,3}#\\d{1,3} ')
   .replace('blockquote', ' {0,3}>')
   .replace('code', ' {4}[^\\n]')
   .replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n')
@@ -114,7 +114,7 @@ block.gfm.nptable = edit(block.gfm.nptable)
 
 block.gfm.table = edit(block.gfm.table)
   .replace('hr', block.hr)
-  .replace('heading', ' {0,3}#{1,6} ')
+  .replace('heading', ' {0,3}#\\d{1,3} ')
   .replace('blockquote', ' {0,3}>')
   .replace('code', ' {4}[^\\n]')
   .replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n')
@@ -139,11 +139,11 @@ block.pedantic = merge({}, block.normal, {
       + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b')
     .getRegex(),
   def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
-  heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
+  heading: /^ *#(\d{1,3}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
   fences: noopTest, // fences not supported
   paragraph: edit(block.normal._paragraph)
     .replace('hr', block.hr)
-    .replace('heading', ' *#{1,6} *[^\n]')
+    .replace('heading', ' *#\\d{1,3} *[^\n]')
     .replace('lheading', block.lheading)
     .replace('blockquote', ' {0,3}>')
     .replace('|fences', '')
