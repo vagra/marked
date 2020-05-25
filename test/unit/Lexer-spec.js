@@ -80,17 +80,17 @@ describe('Lexer', () => {
     it('depth', () => {
       expectTokens({
         md: `
-# heading 1
+#1 heading 1
 
-## heading 2
+#2 heading 2
 
-### heading 3
+#3 heading 3
 
-#### heading 4
+#4 heading 4
 
-##### heading 5
+#5 heading 5
 
-###### heading 6
+#6 heading 6
 
 lheading 1
 ==========
@@ -101,42 +101,42 @@ lheading 2
         tokens: [
           {
             type: 'heading',
-            raw: '# heading 1\n\n',
+            raw: '#1 heading 1\n\n',
             depth: 1,
             text: 'heading 1',
             tokens: [{ type: 'text', raw: 'heading 1', text: 'heading 1' }]
           },
           {
             type: 'heading',
-            raw: '## heading 2\n\n',
+            raw: '#2 heading 2\n\n',
             depth: 2,
             text: 'heading 2',
             tokens: [{ type: 'text', raw: 'heading 2', text: 'heading 2' }]
           },
           {
             type: 'heading',
-            raw: '### heading 3\n\n',
+            raw: '#3 heading 3\n\n',
             depth: 3,
             text: 'heading 3',
             tokens: [{ type: 'text', raw: 'heading 3', text: 'heading 3' }]
           },
           {
             type: 'heading',
-            raw: '#### heading 4\n\n',
+            raw: '#4 heading 4\n\n',
             depth: 4,
             text: 'heading 4',
             tokens: [{ type: 'text', raw: 'heading 4', text: 'heading 4' }]
           },
           {
             type: 'heading',
-            raw: '##### heading 5\n\n',
+            raw: '#5 heading 5\n\n',
             depth: 5,
             text: 'heading 5',
             tokens: [{ type: 'text', raw: 'heading 5', text: 'heading 5' }]
           },
           {
             type: 'heading',
-            raw: '###### heading 6\n\n',
+            raw: '#6 heading 6\n\n',
             depth: 6,
             text: 'heading 6',
             tokens: [{ type: 'text', raw: 'heading 6', text: 'heading 6' }]

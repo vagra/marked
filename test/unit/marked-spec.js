@@ -149,7 +149,7 @@ describe('use extension', () => {
       headerIds: false
     };
     marked.use(extension);
-    const html = marked('# heading');
+    const html = marked('#1 heading');
     expect(html).toBe('<h1>heading</h1>\n');
   });
 
@@ -201,7 +201,7 @@ paragraph
 
 <html />
 
-# heading
+#1 heading
 `);
     expect(html).toBe('extension2 paragraph\nextension1 html\n<h1 id="heading">heading</h1>\n');
   });
@@ -255,7 +255,7 @@ original
     };
     marked.use(extension);
     const html = marked(`
-# heading
+#1 heading
 
 <html />
 
@@ -360,7 +360,7 @@ paragraph
 
 ---
 
-# heading
+#1 heading
 
 \`\`\`
 code
@@ -403,7 +403,7 @@ br
       ['text', 'paragraph'],
       ['space', ''],
       ['hr', '---'],
-      ['heading', '# heading'],
+      ['heading', '#1 heading'],
       ['text', 'heading'],
       ['code', '```code```'],
       ['table', '| a | b ||---|---|| 1 | 2 || 3 | 4 |'],

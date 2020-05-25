@@ -1,5 +1,3 @@
 .DS_Store
 node_modules/
 test/compiled_tests
-lib/
-marked.min.js
