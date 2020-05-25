@@ -124,7 +124,7 @@ module.exports = class Tokenizer {
       return {
         type: 'heading',
         raw: cap[0],
-        depth: cap[1].length,
+        depth: parseInt(cap[1]),
         text: cap[2]
       };
     }
