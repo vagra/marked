@@ -1,8 +1,8 @@
 {
-  "name": "marked",
-  "description": "A markdown parser built for speed",
-  "author": "Christopher Jeffrey",
-  "version": "0.8.2",
+  "name": "@vagra/marked",
+  "description": "Let Markdown support up to 108 heading levels. based on marked",
+  "author": "Yan Chen",
+  "version": "0.8.2-3",
   "main": "./src/marked.js",
   "bin": "./bin/marked",
   "man": "./man/marked.1",
@@ -13,18 +13,20 @@
     "man/",
     "marked.min.js"
   ],
-  "repository": "git://github.com/markedjs/marked.git",
-  "homepage": "https://marked.js.org",
+  "repository": "git://github.com/vagra/marked.git",
+  "homepage": "https://kepan.org",
   "bugs": {
-    "url": "http://github.com/markedjs/marked/issues"
+    "url": "http://github.com/vagra/marked/issues"
   },
   "license": "MIT",
   "keywords": [
+    "kepan",
     "markdown",
     "markup",
     "html"
   ],
   "tags": [
+    "kepan",
     "markdown",
     "markup",
     "html"
