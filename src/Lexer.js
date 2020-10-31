@@ -118,6 +118,17 @@ module.exports = class Lexer {
         src = src.substring(cap[0].length);
         this.tokens.push({
           type: 'heading',
+          depth: cap[1].length,
+          text: cap[2]
+        });
+        continue;
+      }
+
+      // kheading
+      if (cap = this.rules.kheading.exec(src)) {
+        src = src.substring(cap[0].length);
+        this.tokens.push({
+          type: 'heading',
           depth: parseInt(cap[1]),
           text: cap[2]
         });

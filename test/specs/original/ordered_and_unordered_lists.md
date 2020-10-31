@@ -1,7 +1,7 @@
 ---
 headerIds: false
 ---
-#2 Unordered
+## Unordered
 
 Asterisks tight:
 
@@ -54,7 +54,7 @@ Minuses loose:
 -	Minus 3
 
 
-#2 Ordered
+## Ordered
 
 Tight:
 
@@ -98,7 +98,7 @@ Multiple paragraphs:
 
 
 
-#2 Nested
+## Nested
 
 *	Tab
 	*	Tab

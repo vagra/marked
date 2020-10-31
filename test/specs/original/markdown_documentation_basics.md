@@ -36,7 +36,7 @@ can [see the source for it by adding '.text' to the URL] [src].
   [src]: /projects/markdown/basics.text
 
 
-#2 Paragraphs, Headers, Blockquotes ##
+## Paragraphs, Headers, Blockquotes ##
 
 A paragraph is simply one or more consecutive lines of text, separated
 by one or more blank lines. (A blank line is any line that looks like a
@@ -101,7 +101,7 @@ Output:
 
 
 
-#3 Phrase Emphasis ###
+### Phrase Emphasis ###
 
 Markdown uses asterisks and underscores to indicate spans of emphasis.
 
@@ -123,7 +123,7 @@ Output:
    
 
 
-#2 Lists ##
+## Lists ##
 
 Unordered (bulleted) lists use asterisks, pluses, and hyphens (`*`,
 `+`, and `-`) as list markers. These three markers are
@@ -188,7 +188,7 @@ Output:
     
 
 
-#3 Links ###
+### Links ###
 
 Markdown supports two styles for creating links: *inline* and
 *reference*. With both styles, you use square brackets to delimit the
@@ -244,7 +244,7 @@ Output:
     <a href="http://www.nytimes.com/">The New York Times</a>.</p>
 
 
-#3 Images ###
+### Images ###
 
 Image syntax is very much like link syntax.
 
@@ -264,7 +264,7 @@ Both of the above examples produce the same output:
 
 
 
-#3 Code ###
+### Code ###
 
 In a regular paragraph, you can create code span by wrapping text in
 backtick quotes. Any ampersands (`&`) and angle brackets (`<` or
