@@ -130,6 +130,18 @@ module.exports = class Tokenizer {
     }
   }
 
+  kheading(src) {
+    const cap = this.rules.block.kheading.exec(src);
+    if (cap) {
+      return {
+        type: 'heading',
+        raw: cap[0],
+        depth: parseInt(cap[1]),
+        text: cap[2]
+      };
+    }
+  }
+
   nptable(src) {
     const cap = this.rules.block.nptable.exec(src);
     if (cap) {

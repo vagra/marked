@@ -265,7 +265,7 @@
   },
   {
     "markdown": "#5 bolt\n\n#hashtag\n",
-    "html": "<p>#5 bolt</p>\n<p>#hashtag</p>\n",
+    "html": "<h5>bolt</h5>\n<p>#hashtag</p>\n",
     "example": 34,
     "start_line": 802,
     "end_line": 809,

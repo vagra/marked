@@ -47,6 +47,7 @@ function runSpecs(title, dir, showCompletionTable, options) {
   });
 }
 
+runSpecs('Kepan', './kepan', true, { gfm: true, pedantic: false, headerIds: false });
 runSpecs('GFM', './gfm', true, { gfm: true, pedantic: false, headerIds: false });
 runSpecs('CommonMark', './commonmark', true, { gfm: false, pedantic: false, headerIds: false });
 runSpecs('Original', './original', false, { gfm: false, pedantic: true });
